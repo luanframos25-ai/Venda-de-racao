@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-sage: #A8BFA3;
+    --color-beige: #F7F4ED;
+    --color-peach: #F4AD73;
+    --color-forest: #30483A;
+    --color-white: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #F7F4ED;
+    color: #30483A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  button, a, input, select, textarea {
+    outline-color: #30483A;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes pawFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translateY(-6px) rotate(4deg);
+    opacity: 0.65;
+  }
+}
+
+.animate-paw-float {
+  animation: pawFloat 4.5s ease-in-out infinite;
+}
+
+.animate-paw-float-delayed {
+  animation: pawFloat 5.5s ease-in-out 1.4s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-paw-float,
+  .animate-paw-float-delayed {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
+}

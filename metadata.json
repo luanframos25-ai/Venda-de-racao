@@ -1,0 +1,6 @@
+{
+  "name": "Miau & Co. — Nutrição Felina Premium",
+  "description": "E-commerce especializado em rações, sachês e petiscos para gatos com quiz nutricional, Clube Miau de assinatura e experiência acolhedora.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
